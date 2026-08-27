@@ -1,6 +1,6 @@
 # AYNEHA — Site officiel
 
-Site vitrine de **AYNEHA**, un système d'écriture original créé pour transcrire les langues Songhay (Songhaï, Zarma, Dendi), parlées au Mali, Niger, Burkina Faso et Bénin.
+Site vitrine de **AYNEHA**, un système d'écriture original créé pour transcrire les langues Songhay, parlées au Mali, Niger, Burkina Faso et Bénin.
 
 🔗 Site en ligne : *(ajoute ici le lien une fois publié, ex. via GitHub Pages)*
 
