@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alphabet - AYNEHA</title>
+<meta name="description" content="Les 22 consonnes, les 5 voyelles et leurs variantes, les diacritiques et les 10 chiffres de l'alphabet AYNEHA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=2">
+<style>
+  .tabbar{
+    display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line);
+    margin-bottom:32px;overflow-x:auto;
+  }
+  .tab-btn{
+    background:none;border:none;color:var(--sand-dim);padding:11px 16px;
+    font-family:"Space Grotesk",sans-serif;font-weight:600;font-size:0.85rem;
+    cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;
+  }
+  .tab-btn:hover{color:var(--sand);}
+  .tab-btn.active{color:var(--gold-bright);border-color:var(--gold-bright);}
+  .tab-panel{display:none;}
+  .tab-panel.active{display:block;}
+  .glyph-figure{
+    border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+    background:#000;margin:20px 0;
+  }
+  .glyph-figure img{display:block;width:100%;height:auto;}
+  .glyph-caption{
+    font-size:0.78rem;color:var(--sand-dim);text-align:center;padding:10px 12px;
+    background:var(--indigo-800);border-top:1px solid var(--line);
+  }
+  .glyph-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media (max-width:700px){.glyph-row{grid-template-columns:1fr;}}
+  .tool-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="brand" href="index.html">AYNEHA <small>Écriture Songhay</small></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="alphabet.html" class="active">Alphabet</a></li>
+      <li><a href="clavier.html">Teste clavier</a></li>
+      <li><a href="convertisseur.html">Convertisseur</a></li>
+      <li><a href="ressources.html">Ressources</a></li>
+      <li><a href="apropos.html">À propos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero" style="padding:56px 0 40px">
+  <div class="glyph-grid" aria-hidden="true"></div>
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Structure de l'écriture</span>
+      <h1 style="font-size:clamp(2.1rem,4.6vw,3rem)">L'alphabet AYNEHA</h1>
+    </div>
+    <div class="hero-side">
+      <p class="lede">
+        Un système monocaméral (pas de majuscules ni de minuscules) qui se lit et s'écrit de
+        droite à gauche, composé de 22 consonnes, 5 voyelles de base, 7 variantes vocaliques,
+        4 accents diacritiques, 10 chiffres et une ponctuation propre - soit 98 glyphes au total.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-bottom:0">
+  <div class="container grid grid-4">
+    <div class="card"><h3>22</h3><p>Consonnes</p></div>
+    <div class="card"><h3>5 + 7</h3><p>Voyelles de base et leurs variantes (nasalisées, ouvertes)</p></div>
+    <div class="card"><h3>4</h3><p>Accents diacritiques</p></div>
+    <div class="card"><h3>10</h3><p>Chiffres</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="tabbar" role="tablist">
+      <button class="tab-btn active" data-tab="consonnes" role="tab" aria-selected="true">Consonnes</button>
+      <button class="tab-btn" data-tab="voyelles" role="tab" aria-selected="false">Voyelles</button>
+      <button class="tab-btn" data-tab="variantes" role="tab" aria-selected="false">Variantes</button>
+      <button class="tab-btn" data-tab="chiffres" role="tab" aria-selected="false">Chiffres</button>
+      <button class="tab-btn" data-tab="accents" role="tab" aria-selected="false">Accents</button>
+    </div>
+
+    <!-- CONSONNES -->
+    <div class="tab-panel active" id="tab-consonnes">
+      <span class="tag">01 - Les 22 consonnes</span>
+      <h2>Les briques du système</h2>
+      <p>
+        Contrairement aux alphabets empruntés qui nécessitent de combiner plusieurs lettres pour
+        transcrire un seul son songhay, AYNEHA attribue à chaque son consonantique un caractère
+        propre et distinct, sans détour par l'alphabet latin.
+      </p>
+      <ul>
+        <li><strong>Consonnes labiales &amp; dentales</strong> : B, P, M, F, W, D, T, N, L, R</li>
+        <li><strong>Consonnes sifflantes &amp; palatales</strong> : S, Z, Ʃ (sh), TƩ (tch), J, DJ, Ɲ, Y</li>
+        <li><strong>Consonnes vélaires &amp; profondes</strong> : G, K, H, Ŋ</li>
+      </ul>
+      <div class="glyph-figure">
+        <img src="assets/img/consonnes-22.png" alt="Les 22 consonnes de l'alphabet AYNEHA, glyphe par glyphe">
+        <div class="glyph-caption">Les 22 consonnes d'AYNEHA</div>
+      </div>
+      <p>
+        Un caractère = un son : plus d'hésitations d'orthographe ni de doubles lettres superflues.
+        Les formes ont été conçues pour s'aligner naturellement entre elles, offrant une grande
+        fluidité à la lecture comme à l'écriture manuscrite.
+      </p>
+      <div class="tool-links">
+        <a class="btn btn-outline" href="https://store.naabiga.com/produit/ayneha-keyboard" target="_blank" rel="noopener">Essayer le clavier Android</a>
+      </div>
+    </div>
+
+    <!-- VOYELLES -->
+    <div class="tab-panel" id="tab-voyelles">
+      <span class="tag">02 - Les 5 voyelles de base</span>
+      <h2>Cinq sons fondamentaux</h2>
+      <p>
+        En songhay, la clarté des voyelles est essentielle pour la compréhension des mots et le
+        sens des phrases. L'alphabet AYNEHA retient 5 voyelles de base.
+      </p>
+      <div class="glyph-figure">
+        <img src="assets/img/voyelles-5.png" alt="Les 5 voyelles de base d'AYNEHA : U, O, I, E, A">
+        <div class="glyph-caption">Les 5 voyelles de base d'AYNEHA</div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Voyelle</th><th>Exemple</th><th>Sens</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>A</td><td>adadu</td><td>mesure</td></tr>
+            <tr><td>E</td><td>naaney</td><td>confiance</td></tr>
+            <tr><td>I</td><td>idjina</td><td>premier</td></tr>
+            <tr><td>O</td><td>sooje</td><td>militaire</td></tr>
+            <tr><td>U <span style="color:var(--sand-dim);font-weight:400">(se prononce « ou »)</span></td><td>nuna</td><td>feu</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tool-links">
+        <a class="btn btn-outline" href="https://store.naabiga.com/produit/ayneha-keyboard" target="_blank" rel="noopener">Essayer le clavier Android</a>
+      </div>
+    </div>
+
+    <!-- VARIANTES -->
+    <div class="tab-panel" id="tab-variantes">
+      <span class="tag">03 - Les 7 variantes vocaliques</span>
+      <h2>Au-delà des voyelles de base</h2>
+      <p>
+        La langue songhay ne se limite pas à cinq sons vocaliques simples : elle distingue des
+        nuances de nasalisation et d'ouverture essentielles au sens des mots. AYNEHA intègre ainsi
+        7 variantes vocaliques : 5 voyelles nasales et 2 voyelles ouvertes.
+      </p>
+      <h3 style="font-size:1.05rem;margin-top:1.6em">5 voyelles nasales</h3>
+      <p>Obtenues en plaçant l'accent nasalisé (deux points couchés) au-dessus de chacune des cinq voyelles de base.</p>
+      <div class="glyph-figure">
+        <img src="assets/img/voyelles-nasalisees-5.png" alt="Les 5 voyelles nasalisées : Ũ, Õ, Ĩ, Ẽ, Ã">
+        <div class="glyph-caption">Les 5 voyelles nasalisées (Ã, Ẽ, Ĩ, Õ, Ũ)</div>
+      </div>
+      <h3 style="font-size:1.05rem;margin-top:1.6em">2 voyelles ouvertes</h3>
+      <p>Obtenues en plaçant l'accent ouvert (un tilde) au-dessus des seules voyelles E et O.</p>
+      <div class="glyph-figure">
+        <img src="assets/img/voyelles-ouvertes-2.png" alt="Les 2 voyelles ouvertes : Ɛ, Ɔ">
+        <div class="glyph-caption">Les 2 voyelles ouvertes (Ɛ, Ɔ)</div>
+      </div>
+      <div class="tool-links">
+        <a class="btn btn-outline" href="https://store.naabiga.com/produit/ayneha-keyboard" target="_blank" rel="noopener">Essayer le clavier Android</a>
+      </div>
+    </div>
+
+    <!-- CHIFFRES -->
+    <div class="tab-panel" id="tab-chiffres">
+      <span class="tag">04 - Le système numérique</span>
+      <h2>Compter en AYNEHA</h2>
+      <p>
+        AYNEHA comprend un système numérique complet, distinct de la numération arabe usuelle,
+        composé de dix glyphes correspondant aux chiffres 0 à 9. Comme pour les lettres, l'écriture
+        et la lecture des chiffres suivent un sens droite-à-gauche. Ce système est utilisé
+        notamment dans la calculatrice web et l'application Android AYNEHA Calc.
+      </p>
+      <div class="glyph-figure">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEh9038NsGZW3dz7mzpumcSS_0BGyFu5lxh4iHbBV11u9XIb4fvaxI0_JiUKfgOD584TTpL6QYi2W-b1XaEUtyB-1Wchz0qIQ2dCI1-g-I7ICrbF47dr7H4GiIQsBnULnlJg9kpo4mywqshqTWT-Qsgh9DbV8SSF3QLuPiMp2LiVq1e_edYi8SQnQ26xjNc" alt="Les 10 chiffres AYNEHA, de 0 à 9">
+        <div class="glyph-caption">Les 10 chiffres AYNEHA (0 à 9)</div>
+      </div>
+      <div class="tool-links">
+        <a class="btn btn-outline" href="https://store.naabiga.com/produit/ayneha-calc" target="_blank" rel="noopener">Essayer la calculatrice Web</a>
+        <a class="btn btn-outline" href="https://store.naabiga.com/produit/ayneha-calc-2" target="_blank" rel="noopener">Essayer la calculatrice Android</a>
+      </div>
+    </div>
+
+    <!-- ACCENTS -->
+    <div class="tab-panel" id="tab-accents">
+      <span class="tag">05 - Les 4 accents diacritiques</span>
+      <h2>Un système de marques précis</h2>
+      <p>AYNEHA s'appuie sur quatre accents, chacun avec une fonction phonétique précise :</p>
+      <ol>
+        <li><strong>L'accent nasalisé</strong> - deux points couchés au-dessus de la voyelle.</li>
+        <li><strong>L'accent ouvert</strong> - un tilde au-dessus des voyelles E et O uniquement.</li>
+        <li><strong>L'accent double (gémination)</strong> - deux barres horizontales sous la lettre, pour doubler ou allonger la prononciation d'une voyelle ou d'une consonne. Il s'applique à toutes les lettres, à l'exception du H.</li>
+        <li><strong>L'accent muet</strong> - un petit « L » renversé sous la consonne, pour signaler une consonne directement suivie d'une autre consonne, ou une consonne en fin de mot non suivie d'une voyelle. Il ne s'applique pas aux consonnes Ʃ, TƩ, J, Ɲ, H.</li>
+      </ol>
+      <div class="glyph-figure">
+        <img src="assets/img/voyelles-nasalisees-5.png" alt="Les 5 voyelles nasalisées : Ũ, Õ, Ĩ, Ẽ, Ã">
+        <div class="glyph-caption">Accent nasalisé - les 5 voyelles nasalisées (Ã, Ẽ, Ĩ, Õ, Ũ)</div>
+      </div>
+      <div class="glyph-figure">
+        <img src="assets/img/voyelles-ouvertes-2.png" alt="Les 2 voyelles ouvertes : Ɛ, Ɔ">
+        <div class="glyph-caption">Accent ouvert - les 2 voyelles ouvertes (Ɛ, Ɔ)</div>
+      </div>
+      <div class="glyph-figure">
+        <img src="assets/img/lettres-accent-double.png" alt="Les 5 voyelles et 21 consonnes pouvant porter l'accent double (géminé), H excepté">
+        <div class="glyph-caption">Accent double - les 5 voyelles et 21 consonnes pouvant le porter (H excepté)</div>
+      </div>
+      <div class="glyph-figure">
+        <img src="assets/img/consonnes-accent-muet.png" alt="Les 17 consonnes pouvant porter l'accent muet, Sigma, TSigma, J, Gn et H exceptés">
+        <div class="glyph-caption">Accent muet - les 17 consonnes pouvant le porter (Ʃ, TƩ, J, Ɲ et H exceptés)</div>
+      </div>
+      <p>
+        Ce dernier point illustre une cohérence phonétique fine du système : ces cinq consonnes ont
+        une nature articulatoire incompatible avec la mutité, tout comme les voyelles n'ont, par
+        nature, aucune forme muette.
+      </p>
+      <div class="tool-links">
+        <a class="btn btn-outline" href="https://store.naabiga.com/produit/ayneha-keyboard" target="_blank" rel="noopener">Essayer le clavier Android</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <span>© 2026 AYNEHA - <span class="creator-name">Mahamadou Issiaka MAIGA (MAIGUS)</span></span>
+    <span>
+      <a href="https://aynehasonghay.blogspot.com" target="_blank" rel="noopener">Blog officiel</a>
+      &nbsp;·&nbsp;
+      <a href="ressources.html">Ressources</a>
+    </span>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Retour en haut de page">&#8593;</button>
+<script src="assets/nav.js"></script>
+<script src="assets/nav.js"></script>
+</body>
+</html>
